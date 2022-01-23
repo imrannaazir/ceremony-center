@@ -10,7 +10,7 @@
          CSS link 
         ------------------------------ -->
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <!-- ----------------------------------------------------
     Bootstrap CSS link
      ------------------------------------------------------- -->
@@ -27,7 +27,110 @@
          Header start 
         ------------------ -->
     <header>
+        <!-- ------------------------
+    nav
+     ---------------------- -->
 
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Ceremony Convention Center</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!---------------------------------
+             banner
+            -------------------------- -->
+        <div class="">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/banner.png" class="d-block w-100" alt="...">
+                        <div class="row">
+                            <div class="">
+                                <div class="carousel-caption d-none d-md-block col-6 mx-auto">
+                                    <h5 class="display-5 fw-bold">The Perfect <span class="text-primary">Location</span>
+                                        For Your Next Event</h5>
+                                    <p class="fw-light">Ceremony Convention Center & Restaurant is one of the most
+                                        famous venue in
+                                        Uttara, Dhaka,
+                                        Bangladesh.</p>
+                                    <button class="btn bg-white text-primary px-4 py-2 fw-bold mb-4">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banner2.png" class="d-block w-100" alt="...">
+                        <div class="row">
+                            <div class="">
+                                <div class="carousel-caption d-none d-md-block col-6 mx-auto">
+                                    <h5 class="display-5 fw-bold">Launch Your <span
+                                            class="text-primary">Effective</span> Corporate Meeting</h5>
+                                    <p class="fw-light">Ceremony Convention Center & Restaurant arranges Meetings,
+                                        Seminar, Annual General Meeting (AGM), Exhibition (Fair & Expo) and many more
+                                        events.</p>
+                                    <button class="btn bg-white text-primary px-4 py-2 fw-bold mb-4">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banner1.jpg" class="d-block w-100" alt="...">
+                        <div class="row">
+                            <div class="">
+                                <div class="carousel-caption d-none d-md-block col-6 mx-auto">
+                                    <h5 class="display-5 fw-bold">Make Your Next <span
+                                            class="text-primary">Birthday</span> Unforgettable</h5>
+                                    <p class="fw-light">Ceremony Convention Center & Restaurant also arranges Birthday
+                                        Party
+                                        & other Anniversary Party, Iftar Party, Occassional Party and more social
+                                        events.</p>
+                                    <button class="btn bg-white text-primary px-4 py-2 fw-bold mb-4">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
     </header>
     <!-- ------------------------
     main start 
@@ -39,12 +142,25 @@
      Footer start 
     --------------------- -->
     <footer>
+        <div class="bg-dark d-flex justify-content-around align-items-center" style="height: 240px;">
+            <div><small class="text-white text-muted">Copyright © 2022. All rights reserved</small></div>
+
+            <div class="d-flex flex-column">
+                <div>
+                    <p class="text-white">Get The App</p>
+                </div><img class="my-1" src="./icons/google-play.png" alt="" width="135" height="40">
+                <img class="my-2" src="./icons/app-store.png" alt="" width="135" height="40">
+            </div>
+        </div>
+
 
     </footer>
     <!---------------------------------------------
          Bootstrap JS link Script 
         ------------------------------------- -->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
