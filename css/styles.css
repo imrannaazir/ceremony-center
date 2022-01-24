@@ -13,3 +13,14 @@ body{
 .faqs-img{
     max-width: 100vw;
 }
+.back-color{
+    background-color: #3F87F5;
+}
+.rounded-more{
+    border-radius: 20px;
+    position: relative;
+    top: -100px;
+}
+.opm{
+    margin-bottom: 150px;
+}
