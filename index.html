@@ -164,11 +164,20 @@
                 </div>
             </div>
         </section>
+
         <!-------------------------
              Our Packages
             ------------------- -->
         <section class="container">
             <h3 class="text-center py-5 opm fw-bold">Our Packages</h3>
+            <div class="toast show position-absolute end-0 top-400 w-auto">
+                <div class="toast-header text-primary border-end border-primary border-1 shadow">
+                    <img src="icons/Vector.svg" class="rounded me-2" alt="...">
+                    <strong>20% off on next booking</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+            </div>
+
             <div class="row mb-5">
                 <div class="col-lg-3">
                     <h3 class="fw-bold">$300</h3>
@@ -195,7 +204,11 @@
                     <button class="btn text-primary px-5 py-2 bg-light rounded-pill fw-bold">Choose plan</button>
                 </div>
                 <div class="col-lg-3">
-                    <div class="back-color text-white ps-5 py-5 rounded-more">
+                    <div class="back-color text-white ps-5 py-5 rounded-more"><span
+                            class="position-absolute top-0 start-75 translate-middle badge rounded-pill bg-danger">
+                            Hot
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
                         <h3 class="fw-bold">$800</h3>
                         <h4 class="fw-bold">Wedding plus</h4>
                         <p>For most weddings with premium plans & items</p>
@@ -319,12 +332,12 @@
                 </div>
                 <div class="col-md-6">
                     <div class="pt-3">
-                        <h3 class="mb-5">Get in touch with us</h3>
+                        <h3 class="mb-5 fw-bold">Get in touch with us</h3>
                         <div class="d-flex">
                             <h1 class="me-3"><i class="text-primary fas fa-mobile-alt"></i>
                             </h1>
                             <div class="ms-3">
-                                <h5 class="fw-bold">Call Us on :01322810869</h5>
+                                <h5 class="fw-bold">Call Us on : +8801322-810869</h5>
                                 <p class="text-muted">Our office hours are Monday – Friday, 9 am-6 pm</p>
                             </div>
                         </div>
@@ -353,6 +366,8 @@
         </section>
 
 
+
+
     </main>
     <!------------------------------
      Footer start 
@@ -371,6 +386,11 @@
 
 
     </footer>
+    <script>
+        $(document).ready(function () {
+            $('.toast').toast('show');
+        });
+    </script>
     <!---------------------------------------------
          Bootstrap JS link Script 
         ------------------------------------- -->
